@@ -1,0 +1,197 @@
+/*PALETA DE COLORES*/
+:root{
+    --color-principal:#591414;
+    --color-secundario:#8C1111;
+    --color-terciario:#A6242F;
+    --color-negro:#0D0908;
+    --color-alternativo-I:#7D6841;
+    --color-alternativo-II:#3045BF;
+    --color-apuesto:#145959;
+    --color-fondo:#E7E1E1;
+    --color-letra-pricipal: #fff;
+}
+
+/*CARDS DE SISTEMAS*/
+.cards-productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px;
+    background-color: var(--color-letra-pricipal);
+}
+
+.cards-productos .card-p{
+    width: 275px;
+    display: flex;
+    margin: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--color-fondo);
+    align-self: normal;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.76);
+}
+
+.cards-productos .card-p img{
+    width: 100%;
+    height: 225px;
+    border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+}
+
+.cards-productos .card-p h4{
+    font-size: 1.8rem;
+    margin: 10px 0px;
+}
+
+.cards-productos .card-p .precio{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-secundario);
+}
+
+.cards-productos .card-p p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.cards-productos .card-p .botones-card-producto{
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards-productos .card-p .btn-card-edit{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: var(--color-apuesto);
+    color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+}
+
+.cards-productos .card-p .btn-card-ver{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: var(--color-alternativo-II);
+    color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+.cards-productos .card-p .btn-card-eliminar{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: var(--color-alternativo-I);
+    color: var(--color-letra-pricipal);
+    border-radius: 10px;
+    font-family: 'Heebo', sans-serif;
+    cursor: pointer;
+}
+
+.cards-productos .card-p .btn-card-edit:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.cards-productos .card-p .btn-card-ver:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+.cards-productos .card-p .btn-card-eliminar:hover{
+    background-color: var(--color-principal);
+    transition: 0.2s linear;
+}
+
+@media screen and (max-width: 840px) {
+    /*CARD SISTEMA*/
+    .cards-productos{
+        padding: 30px 10px;
+    }
+
+    .cards-productos .card-p{
+        width: 250px;
+        margin: 10px 10px;
+        padding: 10px;
+    }
+
+    .cards-productos .card-p img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .cards-productos .card-p h4{
+        font-size: 1.5rem;
+    }
+
+    .cards-productos .card-p p{
+        font-size: 1rem;
+    }
+
+    .cards-productos .card-p .btn-card-edit{
+        font-size: 0.8rem;
+    }
+
+    .cards-productos .card-p .btn-card-ver{
+        font-size: 0.8rem;
+    }
+
+    .cards-productos .card-p .btn-card-eliminar{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 445px) {
+    /*CARD SISTEMA*/
+    .cards-productos{
+        padding: 30px 10px;
+    }
+
+    .cards-productos .card-p{
+        width: 200px;
+        margin: 20px 10px;
+        padding: 10px;
+    }
+
+    .cards-productos .card-p p{
+        font-size: 0.8rem;
+    }
+
+    .cards-productos .card-p img{
+        width: 100%;
+        height: 175px;
+    }
+
+    .cards-productos .card-p .botones-card-producto{
+        flex-direction: column;
+    }
+
+    .cards-productos .card-p .btn-card-ver{
+        margin: 5px 0px;
+    }
+}

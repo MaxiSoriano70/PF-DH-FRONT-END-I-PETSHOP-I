@@ -1,0 +1,71 @@
+/*PALETA DE COLORES*/
+:root{
+    --color-principal:#591414;
+    --color-secundario:#8C1111;
+    --color-terciario:#A6242F;
+    --color-negro:#0D0908;
+    --color-alternativo-I:#7D6841;
+    --color-alternativo-II:#3045BF;
+    --color-apuesto:#145959;
+    --color-fondo:#E7E1E1;
+    --color-letra-pricipal: #fff;
+}
+
+.productos-destacados {
+    padding: 20px 0;
+}
+
+.titulo-seccion {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.titulo-seccion img {
+    height: 75px;
+    width: 70px;
+}
+
+.titulo-seccion h2 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.productos-stock{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.producto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-letra-pricipal);
+}
+
+.producto p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.producto span {
+    color: var(--color-secundario);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .productos-stock{
+        flex-direction: column;
+    }
+
+    .producto{
+        margin: 20px;
+    }
+}
